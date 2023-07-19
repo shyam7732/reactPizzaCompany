@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    
+}
+.wrapper .box .img{
+    width: 20rem;
+    height: 20rem;
+}
+.wrapper .box .img img{
+    width: 50%;
+    height: 100%;
+}
+.wrapper .gray{
+    filter: grayscale(1);
+}
