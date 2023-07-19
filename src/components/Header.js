@@ -7,9 +7,7 @@ function Header() {
       <header>
 
         <div className='head_1'>
-          {/* <h1>-</h1> */}
           <h1>FAST REACT PIZZA CO. </h1>
-          {/* <h1>-</h1> */}
         </div>
 
         <div className='head_2'>

@@ -7,9 +7,9 @@ function Menu() {
     <>
       <div className='wrapper'>
 
-        {pizzaData.map((pizza) => {
+        {pizzaData.map((pizza, index) => {
           return (
-            <div className={(pizza.soldOut !== false) ? ("gray box") : "box"}>
+            <div key={index} className={(pizza.soldOut !== false) ? ("gray box") : "box"}>
 
               <div className='img'>
                 <img src={pizza.photoName} alt={pizza.name} />
@@ -17,7 +17,7 @@ function Menu() {
               <div className='detail'>
                 <h2>{pizza.name}</h2>
                 <p>{pizza.ingredients}</p>
-                <p>{(pizza.soldOut === false) ? ("Price $" + pizza.price) : "SoldOut"}</p>
+                <p>{(pizza.soldOut === true) ? "SoldOut" : ("Price $" + pizza.price)}</p>
               </div>
 
             </div>
